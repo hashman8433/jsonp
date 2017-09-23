@@ -1,0 +1,21 @@
+<html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">  
+    function jsonpCallback(result) {  
+        for(var i in result) {  
+            alert(i+":"+result[i]);//循环输出a:1,b:2,etc.  
+        }  
+    }  
+</script>
+<script type="text/javascript" src="https://suggest.taobao.com/sug?code=utf-8&q=%E7%94%B5%E8%84%91&callback=jsonpCallback"></script>  
+
+<body>
+
+<h1>我的第一个标题</h1>
+
+<p>我的第一个段落。</p>
+
+</body>
+</html>
