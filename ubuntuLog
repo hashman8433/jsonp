@@ -1,2 +1,4 @@
 //安装火狐 flash
 sudo apt install adobe-flashplugin
+//更换jdk版本
+sudo update-alternatives --config java 
