@@ -1,4 +1,13 @@
 //安装火狐 flash
 sudo apt install adobe-flashplugin
+
 //更换jdk版本
 sudo update-alternatives --config java 
+
+//查看gc 状态
+jstat -gc 30996 3000
+即：每3秒一次显示进程号为30996的java进程的GC情况
+或使用命令：jstat -gcutil 30996 3000
+
+//查看线程
+jstack  <pid>
