@@ -1,27 +1,33 @@
-//安装火狐 flash
-sudo apt install adobe-flashplugin
+Linux 环境配置
+  //安装火狐 flash
+  sudo apt install adobe-flashplugin
 
-//更换jdk版本
-sudo update-alternatives --config java 
+  metasploit 安装
+  curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+    chmod 755 msfinstall && \
+    ./msfinstall
 
-//查看gc 状态    详情请看 http://blog.csdn.net/zhaozheng7758/article/details/8623549
-jstat -gc 30996 3000
-即：每3秒一次显示进程号为30996的java进程的GC情况
-或使用命令：jstat -gcutil 30996 3000
+  //更换jdk版本
+  sudo update-alternatives --config java 
+  
+  
+  
+java 调优
+  //查看gc 状态    详情请看 http://blog.csdn.net/zhaozheng7758/article/details/8623549
+  jstat -gc 30996 3000
+  即：每3秒一次显示进程号为30996的java进程的GC情况
+  或使用命令：jstat -gcutil 30996 3000
 
-//查看线程
-jstack  <pid>
+  //查看线程
+  jstack  <pid>
 
-jps   
-:与unix上的ps类似，用来显示本地的java进程，可以查看本地运行着几个java程序，并显示他们的进程号。   
+  jps   
+  :与unix上的ps类似，用来显示本地的java进程，可以查看本地运行着几个java程序，并显示他们的进程号。   
 
-jstat   
-:一个极强的监视VM内存工具。可以用来监视VM内存内的各种堆和非堆的大小及其内存使用量。   
+  jstat   
+  :一个极强的监视VM内存工具。可以用来监视VM内存内的各种堆和非堆的大小及其内存使用量。   
 
-jmap   
-:打印出某个java进程（使用pid）内存内的，所有‘对象’的情况（如：产生那些对象，及其数量）。   
+  jmap   
+  :打印出某个java进程（使用pid）内存内的，所有‘对象’的情况（如：产生那些对象，及其数量）。   
 
-metasploit 安装
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
-  chmod 755 msfinstall && \
-  ./msfinstall
+
