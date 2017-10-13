@@ -1,0 +1,12 @@
+  vim  /etc/squid/squid.conf
+
+配置文件填写：
+
+  dns_nameservers 8.8.8.8
+  http_port 8000
+  http_access allow all
+  cache_mem 60 MB
+
+查看 squid 运行状态
+
+  netstat -ntl
