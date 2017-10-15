@@ -1,3 +1,12 @@
+system detect
+  sudo gedit /etc/default/apport将enabled=1改为0
+
+安装搜狗 输入法
+  sudo apt-get install fcitx
+  添加输入源
+  sudo dpkg -i sogoupinyin_2.1.0.0086_amd64.deb
+  
+
 Linux 环境配置
   
   //安装火狐 flash
