@@ -1,3 +1,6 @@
+flash 安装
+  sudo apt install adobe-flashplugin
+
 system detect
   sudo gedit /etc/default/apport将enabled=1改为0
 
