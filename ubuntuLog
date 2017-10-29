@@ -1,3 +1,11 @@
+
+apt  安装其他的应用失败时使用
+sudo rm /var/cache/apt/archives/lock
+ 
+sudo rm /var/lib/dpkg/lock
+
+
+
 flash 安装
   sudo apt install adobe-flashplugin
 
