@@ -1,8 +1,12 @@
 
+mysql  授权远程登录
+ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+
+
 apt  安装其他的应用失败时使用
-sudo rm /var/cache/apt/archives/lock
- 
-sudo rm /var/lib/dpkg/lock
+ sudo rm /var/cache/apt/archives/lock
+
+ sudo rm /var/lib/dpkg/lock
 
 
 
