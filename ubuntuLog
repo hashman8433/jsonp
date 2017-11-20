@@ -1,62 +1,64 @@
 
 mysql  授权远程登录
- GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+ 	
+	GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
  
- 生成日志文件：
- show variables like '%general%';  
+	生成日志文件：
+	show variables like '%general%';  
 	set global general_log=on;  
 
+	CREATE DATABASE `test` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;  
 apt  安装其他的应用失败时使用
- sudo rm /var/cache/apt/archives/lock
+	sudo rm /var/cache/apt/archives/lock
 
- sudo rm /var/lib/dpkg/lock
+	sudo rm /var/lib/dpkg/lock
 
 
 
 flash 安装
-  sudo apt install adobe-flashplugin
+	sudo apt install adobe-flashplugin
 
 system detect
-  sudo gedit /etc/default/apport将enabled=1改为0
+	sudo gedit /etc/default/apport将enabled=1改为0
 
 安装搜狗 输入法
-  sudo apt-get install fcitx
-  添加输入源
-  sudo dpkg -i sogoupinyin_2.1.0.0086_amd64.deb
+	sudo apt-get install fcitx
+	添加输入源
+	sudo dpkg -i sogoupinyin_2.1.0.0086_amd64.deb
   
 
 Linux 环境配置
   
-  //安装火狐 flash
-  sudo apt install adobe-flashplugin
+	//安装火狐 flash
+		sudo apt install adobe-flashplugin
 
-  metasploit 安装
-    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
-    chmod 755 msfinstall && \
-    ./msfinstall
+	metasploit 安装
+		curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+		chmod 755 msfinstall && \
+		./msfinstall
 
-  //更换jdk版本
-    sudo update-alternatives --config java 
+	//更换jdk版本
+		sudo update-alternatives --config java 
   
   
   
 java 调优
   
-  //查看gc 状态    详情请看 http://blog.csdn.net/zhaozheng7758/article/details/8623549
-    jstat -gc 30996 3000
-    即：每3秒一次显示进程号为30996的java进程的GC情况
-    或使用命令：jstat -gcutil 30996 3000
+	//查看gc 状态    详情请看 http://blog.csdn.net/zhaozheng7758/article/details/8623549
+		jstat -gc 30996 3000
+		即：每3秒一次显示进程号为30996的java进程的GC情况
+		或使用命令：jstat -gcutil 30996 3000
 
-  //查看线程
-    jstack  <pid>
+	//查看线程
+		jstack  <pid>
 
-    jps   
-    :与unix上的ps类似，用来显示本地的java进程，可以查看本地运行着几个java程序，并显示他们的进程号。   
+	jps   
+		:与unix上的ps类似，用来显示本地的java进程，可以查看本地运行着几个java程序，并显示他们的进程号。   
 
-    jstat   
-    :一个极强的监视VM内存工具。可以用来监视VM内存内的各种堆和非堆的大小及其内存使用量。   
+	jstat   
+		:一个极强的监视VM内存工具。可以用来监视VM内存内的各种堆和非堆的大小及其内存使用量。   
 
-    jmap   
-    :打印出某个java进程（使用pid）内存内的，所有‘对象’的情况（如：产生那些对象，及其数量）。   
+	jmap   
+		:打印出某个java进程（使用pid）内存内的，所有‘对象’的情况（如：产生那些对象，及其数量）。   
 
 
