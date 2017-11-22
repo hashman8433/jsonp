@@ -1,3 +1,14 @@
+微信安装
+	有了Snap，你便更容易在Linux上安装微信的客户端。当然，首先要确保你得pc中安装了snapd和snapd-xdg-open。以下为安装命令：
+
+	sudo apt install snapd snapd-xdg-open
+	 运行完成后，便开始安装electronic-chat，命令为：
+
+	sudo snap install electronic-chat
+	 微信客户端开始安装，安装完成后，输入命令启动：
+
+	electronic-chat
+
 
 mysql  授权远程登录
  	
