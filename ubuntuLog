@@ -1,3 +1,6 @@
+tomcat 远程debug
+	JAVA_OPTS="-Xms256m -Xmx512m -XX:PermSize=256M -XX:MaxNewSize=256m -XX:MaxPermSize=512m -agentlib:jdwp=transport=dt_socket,address=59973,suspend=n,server=y"
+
 数据库排行榜：
 	https://db-engines.com/en/ranking
 
