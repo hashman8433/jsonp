@@ -1,2 +1,6 @@
 solr 创建集合
-  bin/solr create -c page
+  bin/solr create -c pago
+solr 启动
+  bin/solr start -cloud
+solr 停止
+  bin/solr stop -all
