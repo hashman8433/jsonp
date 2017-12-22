@@ -1,2 +1,8 @@
 IVRE 漏洞扫描
   http://www.freebuf.com/sectool/155140.html
+  
+防火墙配置
+   iptables -A INPUT -p tcp --dport 8983 -j DROP
+	 禁止所有ip访问 8983 端口
+	 iptables -A INPUT -s 183.16.188.9 -p tcp -m tcp --dport 8983 -j ACCEPT
+	 允许 183.16.188.9访问 8983 端口
