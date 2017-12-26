@@ -4,3 +4,6 @@ solr 启动
   bin/solr start -cloud
 solr 停止
   bin/solr stop -all
+  
+<delete><query>*:*</query></delete>
+<commit/>
