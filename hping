@@ -1,0 +1,8 @@
+hping install methon:
+
+  git clone https://github.com/antirez/hping.git
+  cd hping
+  yum install -y libpcap-devel gcc gcc-c++ tcl tcl-devel
+  ./configure
+  make 
+  make install
