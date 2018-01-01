@@ -1,4 +1,4 @@
-hping install methon:
+hping install:
 
   git clone https://github.com/antirez/hping.git
   cd hping
@@ -6,3 +6,11 @@ hping install methon:
   ./configure
   make 
   make install
+  
+how to run hping:
+  hping 192.168.3.13 -p 80 -S
+  hping 192.168.3.13 -p 80 -A
+  hping 192.168.3.13 -p 80 -S -a 192.168.3.13
+  
+  
+  hping3 -c 100000 -d 120 -S -w 64 -p 80 --flood --rand-source 192.168.3.13
