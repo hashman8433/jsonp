@@ -7,3 +7,12 @@ solr 停止
   
 <delete><query>*:*</query></delete>
 <commit/>
+
+
+单个 字符分词
+  <fieldType name="singleStr" class="solr.TextField" positionIncrementGap="100" stored="false" multiValued="true" >
+		<analyzer>
+		 <tokenizer class="solr.StandardTokenizerFactory"/>
+		 <filter class="solr.NGramFilterFactory" minGramSize="1" maxGramSize="10"/>
+		</analyzer>
+	</fieldType>
