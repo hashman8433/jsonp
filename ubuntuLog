@@ -29,6 +29,7 @@ apt  安装其他的应用失败时使用
 	sudo rm /var/cache/apt/archives/lock
 
 	sudo rm /var/lib/dpkg/lock
+or      sudo rm /var/lib/apt/lists/* -vf
 
 
 
