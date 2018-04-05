@@ -35,7 +35,10 @@ or      sudo rm /var/lib/apt/lists/* -vf
 
 flash 安装
 	sudo apt install adobe-flashplugin
-
+or
+        sudo yum -y install http://linuxdownload.adobe.com/linux/x86_64/adobe-release-x86_64-1.0-1.noarch.rpm
+	sudo yum install flash-plugin
+	
 system detect
 	sudo gedit /etc/default/apport将enabled=1改为0
 
