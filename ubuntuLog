@@ -91,3 +91,12 @@ install ntfs-3g
 add centos resp
 	mv /etc/yum.repos.d/CentOS-Base.repo   /etc/yum.repos.d/CentOS-Base.repo.bak
 	wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+	
+	
+配置nginx 反向代理 8080
+	（when ==> failed (13: Permission denied) while connecting to upstream ）
+	setsebool -P httpd_can_network_connect 1
+
+安装tail
+	yum install opensips -y
+	
